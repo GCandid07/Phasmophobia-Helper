@@ -8,10 +8,31 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        primary: 'var(--color-primary)',
+        accent: 'var(--color-accent)',
+        secondary: 'var(--color-secondary)',
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
+        'text-highlight': 'var(--color-text-highlight)',
+        alert: 'var(--color-alert)',
+      },
+      fontFamily: {
+        shadow: 'var(--font-shadows-into-light)',
+        ghost: 'var(--font-october-crow)',
+        roboto: 'var(--font-roboto)',
+        montserrat: 'var(--font-montserrat)',
+      },
+      borderRadius: {
+        DEFAULT: 'var(--border-radius)',
+      },
+      spacing: {
+        small: 'var(--spacing-small)',
+        medium: 'var(--spacing-medium)',
+        large: 'var(--spacing-large)',
+        xlarge: 'var(--spacing-xlarge)',
       },
     },
   },
