@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Shadows Into Light';
+  src: url('/fonts/ShadowsIntoLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'October Crow';
+  src: url('/fonts/October_Crow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --color-background: #000000;
+  --color-surface: #1C1C1C;
+  --color-primary: #00FFB2;
+  --color-accent: #4A90E2;
+  --color-secondary: #2C3E50;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #BDC3C7;
+  --color-text-highlight: #A9CCE3;
+  --color-alert: #E74C3C;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+  --font-shadows-into-light: 'Shadows Into Light', sans-serif;
+  --font-october-crow: 'October Crow', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 32px;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  --border-radius: 4px;
 }
