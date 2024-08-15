@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         background: 'var(--color-background)',
+        disabled: 'var(--color-disabled)',
         surface: 'var(--color-surface)',
         primary: 'var(--color-primary)',
         accent: 'var(--color-accent)',
