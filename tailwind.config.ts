@@ -19,7 +19,7 @@ const config: Config = {
         'text-primary': 'var(--color-text-primary)',
         'text-secondary': 'var(--color-text-secondary)',
         'text-highlight': 'var(--color-text-highlight)',
-        alert: 'var(--color-alert)',
+        danger: 'var(--color-danger)',
         success: 'var(--color-success)',
         'current-dark': 'var(--color-current-dark)',
       },

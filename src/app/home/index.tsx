@@ -8,7 +8,7 @@ import ghosts from '@/utils/data/ghosts.json'
 import { FormValues } from './types'
 
 const HomePage = () => {
-  const { values, setValue } = useForm<FormValues>({
+  const { values, setValue, reset } = useForm<FormValues>({
     emf: 0,
     fingerprints: 0,
     ghostwriting: 0,
@@ -20,11 +20,16 @@ const HomePage = () => {
 
   return (
     <div className="flex h-full flex-col justify-between gap-4 text-white">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center text-center">
         <WelcomeMessage />
       </div>
       <Card className="w-full sm:w-max">
-        <EvidenceSelector values={values} setValue={setValue} />
+        <EvidenceSelector
+          ghosts={ghosts}
+          values={values}
+          setValue={setValue}
+          reset={reset}
+        />
       </Card>
       <GhostList ghosts={ghosts} selectedEvidences={values} />
     </div>

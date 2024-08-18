@@ -1,12 +1,13 @@
 'use client'
 import { Correct } from '@/components/UI/Icons/Correct'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 type CheckboxProps = {
   onChange: (checked: boolean) => void
   initialChecked?: boolean
   label: string
   labelPosition?: 'top' | 'bottom' | 'left' | 'right'
+  disabled?: boolean
 }
 
 /**
@@ -25,21 +26,27 @@ const Checkbox: React.FC<CheckboxProps> = ({
   initialChecked = false,
   label,
   labelPosition = 'right',
+  disabled = false,
 }) => {
   const [checked, setChecked] = useState(initialChecked)
 
+  useEffect(() => {
+    setChecked(initialChecked)
+  }, [initialChecked])
+
   const handleClick = () => {
+    if (disabled) return
     const nextChecked = !checked
     setChecked(nextChecked)
     onChange(nextChecked)
   }
 
   const renderIcon = () =>
-    checked ? <Correct className="text-success h-6 w-6" /> : null
+    checked ? <Correct className="h-6 w-6 text-success" /> : null
 
   const renderLabel = () => (
     <span
-      className={`text-lg transition-all ${checked ? 'text-success font-bold' : ''}`}
+      className={`text-lg transition-all ${checked ? 'font-bold text-success' : ''}`}
     >
       {label}
     </span>
@@ -49,7 +56,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
     <button
       className={`flex h-6 w-6 items-center justify-center rounded-md border-2 border-gray-300 transition-colors focus:outline-none ${
         checked ? 'bg-green-100' : 'bg-white'
-      }`}
+      } ${disabled ? 'cursor-not-allowed' : ''}`}
     >
       {renderIcon()}
     </button>
@@ -72,7 +79,10 @@ const Checkbox: React.FC<CheckboxProps> = ({
   }
 
   return (
-    <div className="w-max cursor-pointer text-white" onClick={handleClick}>
+    <div
+      className={`w-max text-white ${disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}`}
+      onClick={handleClick}
+    >
       {renderContent()}
     </div>
   )

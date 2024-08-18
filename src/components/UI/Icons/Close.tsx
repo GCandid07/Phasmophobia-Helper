@@ -1,14 +1,15 @@
 interface ComponentProps extends React.SVGAttributes<SVGSVGElement> {
-  fillClass?: string
+  className?: string
 }
 
-export const Close = ({ fillClass, ...rest }: ComponentProps) => (
+export const Close = ({ className, ...rest }: ComponentProps) => (
   <svg
     width="40"
     height="40"
     viewBox="0 0 40 40"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className || 'fill-white hover:fill-gray-400'}
     {...rest}
   >
     <rect
@@ -17,7 +18,6 @@ export const Close = ({ fillClass, ...rest }: ComponentProps) => (
       width="24"
       height="2"
       transform="rotate(-45 10.8076 27.7782)"
-      className={fillClass || 'fill-white'}
     />
     <rect
       x="12.2219"
@@ -25,7 +25,6 @@ export const Close = ({ fillClass, ...rest }: ComponentProps) => (
       width="24"
       height="2"
       transform="rotate(45 12.2219 10.8076)"
-      className={fillClass || 'fill-white'}
     />
   </svg>
 )

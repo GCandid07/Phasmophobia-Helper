@@ -1,5 +1,7 @@
 import { EvidenceKey, Ghost, GhostListProps } from '../types'
 import GhostCard from './GhostCard'
+import { useState } from 'react'
+import GhostModal from './GhostModal'
 
 const evidenceMap: Record<EvidenceKey, string> = {
   emf: 'EMF Level 5',
@@ -12,6 +14,18 @@ const evidenceMap: Record<EvidenceKey, string> = {
 }
 
 const GhostList: React.FC<GhostListProps> = ({ ghosts, selectedEvidences }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedGhost, setSelectedGhost] = useState<Ghost | null>(null)
+
+  const openModal = (ghost: Ghost) => {
+    setSelectedGhost(ghost)
+    setIsModalOpen(true)
+  }
+  const closeModal = () => {
+    setSelectedGhost(null)
+    setIsModalOpen(false)
+  }
+
   const sortGhosts = (ghosts: Ghost[]) => {
     return ghosts
       .map((ghost) => {
@@ -37,8 +51,18 @@ const GhostList: React.FC<GhostListProps> = ({ ghosts, selectedEvidences }) => {
   return (
     <div className="flow-row grid w-full grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-4">
       {sortedGhosts.map((ghost) => (
-        <GhostCard key={ghost.id} ghost={ghost} disabled={!ghost.matches} />
+        <GhostCard
+          onClick={() => openModal(ghost)}
+          key={ghost.id}
+          ghost={ghost}
+          disabled={!ghost.matches}
+        />
       ))}
+      <GhostModal
+        closeModal={closeModal}
+        isModalOpen={isModalOpen}
+        ghost={selectedGhost}
+      />
     </div>
   )
 }
