@@ -36,11 +36,7 @@ const WelcomeMessage: React.FC = () => {
     }
   }, [])
 
-  return (
-    <div className="p-4">
-      <Quote text={message} />
-    </div>
-  )
+  return <div className="p-4">{message && <Quote text={message} />}</div>
 }
 
 export default WelcomeMessage

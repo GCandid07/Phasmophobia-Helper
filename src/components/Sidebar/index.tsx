@@ -30,11 +30,9 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
         } transition-transform duration-200 ease-in-out`}
       >
         <div className="flex items-center space-x-2 px-4 py-7 text-white">
-          <Close
-            className="cursor-pointer"
-            fillClass="fill-[#ccc] hover:fill-white"
-            onClick={toggleSidebar}
-          />
+          <button onClick={toggleSidebar}>
+            <Close className="fill-[#ccc] hover:fill-white" />
+          </button>
         </div>
 
         <nav className="space-y-2 py-2">

@@ -1,16 +1,26 @@
 import Card from '@/components/Card'
 import { GhostCardProps } from '../types'
 
-const GhostCard: React.FC<GhostCardProps> = ({ ghost, disabled }) => {
+const evidenceTranslations: Record<string, string> = {
+  'EMF Level 5': 'EMF Level 5',
+  Fingerprints: 'Ultravioleta',
+  'Ghost Writing': 'Escrita Fantasma',
+  'D.O.T.S Projector': 'Projetor D.O.T.S',
+  'Ghost Orbs': 'Orbe Fantasma',
+  'Spirit Box': 'Spirit Box',
+  'Freezing Temperatures': 'Temperatura Baixa',
+}
+
+const GhostCard: React.FC<GhostCardProps> = ({ ghost, disabled, onClick }) => {
   return (
-    <Card disabled={disabled}>
+    <Card disabled={disabled} onClick={onClick}>
       <div className="flex h-40 justify-between rounded-lg bg-current-dark p-2">
         <div className="flex w-2/4 flex-col gap-4">
           <h1 className="font-ghost text-2xl text-accent">{ghost.name}</h1>
           <div className="flex flex-col gap-1 overflow-hidden">
             {ghost.evidences.map((evidence) => (
               <p key={evidence} className="text-sm text-white">
-                {evidence}
+                {evidenceTranslations[evidence] || evidence}
               </p>
             ))}
           </div>

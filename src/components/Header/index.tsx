@@ -23,12 +23,10 @@ const Header = ({ toggleSidebar, isOpen }: HeaderProps) => {
     <div className="sticky top-0">
       <div className="relative flex w-full">
         <div className="w-full flex-1 space-y-6 bg-secondary px-2 py-7 text-2xl font-bold shadow-inset">
-          <div className="flex items-center gap-4">
-            <MenuH
-              className="cursor-pointer"
-              onClick={toggleSidebar}
-              fillClass="fill-[#ccc] hover:fill-white"
-            />
+          <div className="flex items-center gap-4 px-4">
+            <button onClick={toggleSidebar}>
+              <MenuH className="fill-[#ccc] hover:fill-white" />
+            </button>
             <span
               className={`text-white transition-all duration-200 ease-in-out ${
                 isOpen ? 'md:ml-52' : 'ml-0'
