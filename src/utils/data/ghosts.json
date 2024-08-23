@@ -1,122 +1,386 @@
 [
   {
     "id": 1,
-    "name": "Banshee",
-    "evidences": ["Fingerprints", "Ghost Orbs", "D.O.T.S Projector"]
+    "name": "Spirit",
+    "evidences": ["EMF Level 5", "Spirit Box", "Ghost Writing"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 2,
-    "name": "Demon",
-    "evidences": ["Fingerprints", "Ghost Writing", "Freezing Temperatures"]
+    "name": "Wraith",
+    "evidences": ["EMF Level 5", "Spirit Box", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 3,
-    "name": "Deogen",
-    "evidences": ["Spirit Box", "Ghost Writing", "D.O.T.S Projector"]
+    "name": "Phantom",
+    "evidences": ["Spirit Box", "Fingerprints", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 4,
-    "name": "Goryo",
-    "evidences": ["EMF Level 5", "Fingerprints", "D.O.T.S Projector"]
+    "name": "Poltergeist",
+    "evidences": ["Spirit Box", "Fingerprints", "Ghost Writing"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 5,
-    "name": "Hantu",
-    "evidences": ["Fingerprints", "Ghost Orbs", "Freezing Temperatures"]
+    "name": "Banshee",
+    "evidences": ["Fingerprints", "Ghost Orbs", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 6,
     "name": "Jinn",
-    "evidences": ["EMF Level 5", "Fingerprints", "Freezing Temperatures"]
+    "evidences": ["EMF Level 5", "Fingerprints", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": [2.5]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 7,
     "name": "Mare",
-    "evidences": ["Spirit Box", "Ghost Orbs", "Ghost Writing"]
+    "evidences": ["Spirit Box", "Ghost Orbs", "Ghost Writing"],
+    "sanity": {
+      "normal": 40,
+      "others": [60]
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 8,
-    "name": "Moroi",
-    "evidences": ["Spirit Box", "Ghost Writing", "Freezing Temperatures"]
+    "name": "Revenant",
+    "evidences": ["Ghost Orbs", "Ghost Writing", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.0,
+      "others": [3.0]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 9,
-    "name": "Myling",
-    "evidences": ["EMF Level 5", "Fingerprints", "Ghost Writing"]
+    "name": "Shade",
+    "evidences": ["EMF Level 5", "Ghost Writing", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 35,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 10,
-    "name": "Obake",
-    "evidences": ["EMF Level 5", "Fingerprints", "Ghost Orbs"]
+    "name": "Demon",
+    "evidences": ["Fingerprints", "Ghost Writing", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 70,
+      "others": [100]
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 11,
-    "name": "Oni",
-    "evidences": ["EMF Level 5", "Freezing Temperatures", "D.O.T.S Projector"]
+    "name": "Yurei",
+    "evidences": ["Ghost Orbs", "Freezing Temperatures", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 12,
-    "name": "Onryo",
-    "evidences": ["Spirit Box", "Ghost Orbs", "Freezing Temperatures"]
+    "name": "Oni",
+    "evidences": ["EMF Level 5", "Freezing Temperatures", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 13,
-    "name": "Phantom",
-    "evidences": ["Spirit Box", "Fingerprints", "D.O.T.S Projector"]
+    "name": "Yokai",
+    "evidences": ["Spirit Box", "Ghost Orbs", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": [80]
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 14,
-    "name": "Poltergeist",
-    "evidences": ["Spirit Box", "Fingerprints", "Ghost Writing"]
+    "name": "Hantu",
+    "evidences": ["Fingerprints", "Ghost Orbs", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.4,
+      "others": [2.7]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 15,
-    "name": "Raiju",
-    "evidences": ["EMF Level 5", "Ghost Orbs", "D.O.T.S Projector"]
+    "name": "Goryo",
+    "evidences": ["EMF Level 5", "Fingerprints", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 16,
-    "name": "Revenant",
-    "evidences": ["Ghost Orbs", "Ghost Writing", "Freezing Temperatures"]
+    "name": "Myling",
+    "evidences": ["EMF Level 5", "Fingerprints", "Ghost Writing"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 17,
-    "name": "Shade",
-    "evidences": ["EMF Level 5", "Ghost Writing", "Freezing Temperatures"]
+    "name": "Onryo",
+    "evidences": ["Spirit Box", "Ghost Orbs", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 60,
+      "others": [100]
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 18,
-    "name": "Spirit",
-    "evidences": ["EMF Level 5", "Spirit Box", "Ghost Writing"]
+    "name": "The Twins",
+    "evidences": ["EMF Level 5", "Spirit Box", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.53,
+      "others": [1.87]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 19,
-    "name": "The Mimic",
-    "evidences": ["Spirit Box", "Fingerprints", "Freezing Temperatures", "Ghost Orbs"]
+    "name": "Raiju",
+    "evidences": ["EMF Level 5", "Ghost Orbs", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 50,
+      "others": [65]
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": [2.5]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 20,
-    "name": "The Twins",
-    "evidences": ["EMF Level 5", "Spirit Box", "Freezing Temperatures"]
+    "name": "Obake",
+    "evidences": ["EMF Level 5", "Fingerprints", "Ghost Orbs"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 21,
-    "name": "Thaye",
-    "evidences": ["Ghost Orbs", "Ghost Writing", "D.O.T.S Projector"]
+    "name": "The Mimic",
+    "evidences": ["Spirit Box", "Fingerprints", "Freezing Temperatures", "Ghost Orbs"],
+    "sanity": {
+      "normal": 50,
+      "others": [100, 12]
+    },
+    "speed": {
+      "normal": 1.7,
+      "others": []
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 22,
-    "name": "Wraith",
-    "evidences": ["EMF Level 5", "Spirit Box", "D.O.T.S Projector"]
+    "name": "Moroi",
+    "evidences": ["Spirit Box", "Ghost Writing", "Freezing Temperatures"],
+    "sanity": {
+      "normal": 50,
+      "others": []
+    },
+    "speed": {
+      "normal": 1.5,
+      "others": [2.25, 3.71]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 23,
-    "name": "Yokai",
-    "evidences": ["Spirit Box", "Ghost Orbs", "D.O.T.S Projector"]
+    "name": "Deogen",
+    "evidences": ["Spirit Box", "Ghost Writing", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 40,
+      "others": []
+    },
+    "speed": {
+      "normal": 3.0,
+      "others": [0.4]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   },
   {
     "id": 24,
-    "name": "Yurei",
-    "evidences": ["Ghost Orbs", "Freezing Temperatures", "D.O.T.S Projector"]
+    "name": "Thaye",
+    "evidences": ["Ghost Orbs", "Ghost Writing", "D.O.T.S Projector"],
+    "sanity": {
+      "normal": 75,
+      "others": [15]
+    },
+    "speed": {
+      "normal": 2.75,
+      "others": [1.0]
+    },
+    "tips": [],
+    "behaviors": [],
+    "skill": ""
   }
 ]

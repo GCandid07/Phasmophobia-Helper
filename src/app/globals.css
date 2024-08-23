@@ -4,16 +4,22 @@
 
 @font-face {
   font-family: 'Shadows Into Light';
-  src: url('/fonts/ShadowsIntoLight.ttf') format('truetype');
+  src: url('/fonts/ShadowsIntoLight.woff2') format('woff2'),
+       url('/fonts/ShadowsIntoLight.woff') format('woff'),
+       url('/fonts/ShadowsIntoLight.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'October Crow';
-  src: url('/fonts/October_Crow.ttf') format('truetype');
+  src: url('/fonts/October_Crow.woff2') format('woff2'),
+       url('/fonts/October_Crow.woff') format('woff'),
+       url('/fonts/October_Crow.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {

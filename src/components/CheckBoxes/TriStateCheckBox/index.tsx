@@ -47,7 +47,7 @@ const TriStateCheckbox: React.FC<TriStateCheckboxProps> = ({
     if (state === 1) {
       return <Correct className="h-6 w-6 text-success" />
     } else if (state === 2 || disabled) {
-      return <Incorrect className="text-danger h-6 w-6" />
+      return <Incorrect className="h-6 w-6 text-danger" />
     }
     return null
   }
