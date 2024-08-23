@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <head>
-        <title>Phasmophobia | Dicas</title>
+        <title>Phasmophobia | Dicas - Não oficial</title>
         <meta
           name="description"
           content="Desenvolvido para jogadores de Phasmophobia"

@@ -9,10 +9,20 @@ export type EvidenceKey =
 
 export type FormValues = Record<EvidenceKey, number>
 
+export type Behaviors = {
+  normal: number
+  others: number[]
+}
+
 export type Ghost = {
   id: number
   name: string
   evidences: string[]
+  sanity: Behaviors
+  speed: Behaviors
+  tips: string[]
+  behaviors: string[]
+  skill: string
 }
 
 export type EvidenceSelectorProps = {
@@ -37,4 +47,12 @@ export type GhosModalProps = {
   isModalOpen: boolean
   closeModal: () => void
   ghost: Ghost | null
+}
+
+export type GhostSpeedProps = {
+  ghost: Ghost
+}
+
+export type GhostSanityProps = {
+  ghost: Ghost
 }

@@ -23,14 +23,25 @@ const HomePage = () => {
       <div className="flex items-center justify-center text-center">
         <WelcomeMessage />
       </div>
-      <Card className="w-full sm:w-max">
-        <EvidenceSelector
-          ghosts={ghosts}
-          values={values}
-          setValue={setValue}
-          reset={reset}
-        />
-      </Card>
+
+      <div className="flex gap-4">
+        <Card className="w-full sm:w-max">
+          <EvidenceSelector
+            ghosts={ghosts}
+            values={values}
+            setValue={setValue}
+            reset={reset}
+          />
+        </Card>
+
+        {/* Add description for the ghosts list */}
+        {/* <Card className="w-full sm:w-max">
+          <div className="mb-4 flex items-center justify-between px-4">
+            <p>Bom dia!</p>
+          </div>
+        </Card> */}
+      </div>
+
       <GhostList ghosts={ghosts} selectedEvidences={values} />
     </div>
   )
