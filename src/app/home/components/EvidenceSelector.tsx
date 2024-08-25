@@ -58,7 +58,7 @@ const EvidenceSelector: React.FC<EvidenceSelectorProps> = ({
   return (
     <>
       <div className="mb-4 flex items-center justify-between px-4">
-        <h1 className="text-2xl text-accent">Evidencias:</h1>
+        <h1 className="text-2xl text-accent underline">Evidências</h1>
         <Button color="accent" variant="outline" onClick={reset}>
           Resetar
         </Button>
