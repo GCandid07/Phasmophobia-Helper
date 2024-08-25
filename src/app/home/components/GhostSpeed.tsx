@@ -10,7 +10,7 @@ const GhostSpeed: React.FC<GhostSpeedProps> = ({ ghost }) => {
 
   const handleSoundClick = (speed: number, index: number) => {
     const id = ghost.id.toString()
-    playStepSound({ id, speed, index })
+    playStepSound({ id, speed, index, type: 'footsteps' })
   }
 
   return (
