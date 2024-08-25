@@ -20,9 +20,8 @@ export type Ghost = {
   evidences: string[]
   sanity: Behaviors
   speed: Behaviors
-  tips: string[]
-  behaviors: string[]
-  skill: string
+  description: string
+  abilities: string[]
 }
 
 export type EvidenceSelectorProps = {

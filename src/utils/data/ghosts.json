@@ -11,9 +11,10 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "O Spirit é considerado o fantasma sem personalidade.",
+    "abilities": [
+      "Usar incenso em um Spirit durante uma caçada impede a próxima caçada por 180s, em vez dos 90s normais."
+    ]
   },
   {
     "id": 2,
@@ -27,9 +28,10 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Wraith é o único fantasma que não interage com o sal, nunca deixando pegadas ao passar por cima.",
+    "abilities": [
+      "Sua habilidade é se teleportar para qualquer jogador, gerando EMF nível 2."
+    ]
   },
   {
     "id": 3,
@@ -43,9 +45,12 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Tirar uma foto de um Phantom durante um evento ou via D.O.T.S faz com que ele desapareça.",
+    "abilities": [
+      "O Phantom é menos visível durante as caçadas.",
+      "Drena 0.5% de sanidade enquanto estiver visível em um raio de 10m.",
+      "Pode vagar atrás de jogadores, gerando EMF nível 2."
+    ]
   },
   {
     "id": 4,
@@ -59,9 +64,11 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Poltergeist interage muito com o ambiente, podendo mover vários objetos de uma vez, reduzindo 2% de sanidade por item jogado.",
+    "abilities": [
+      "Durante a caçada, arremessa itens a cada 0.5s.",
+      "Sua habilidade é arremessar objetos mais rápido e mais longe."
+    ]
   },
   {
     "id": 5,
@@ -75,9 +82,13 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "A Banshee escolhe um alvo aleatório no início do mapa e só persegue esse jogador durante a caçada (exceto se o jogador estiver fora do local).",
+    "abilities": [
+      "Prefere eventos cantando e caça com sanidade de 50% do alvo.",
+      "Se o alvo tocar a Banshee durante um evento cantando, perde 15% de sanidade.",
+      "Pode vagar atrás de jogadores, não gerando EMF nível 2.",
+      "Banshee pode emitir um grito específico captado pelo microfone parabólico."
+    ]
   },
   {
     "id": 6,
@@ -91,9 +102,11 @@
       "normal": 1.7,
       "others": [2.5]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Jinn nunca desliga o disjuntor.",
+    "abilities": [
+      "Se o disjuntor estiver ligado durante uma caçada e Jinn avistar um jogador a mais de 3m, sua velocidade aumenta para 2.5m/s; caso contrário, é 1.7m/s.",
+      "Pode reduzir 25% da sanidade de jogadores próximos, gerando EMF nível 2 ou 5 no disjuntor."
+    ]
   },
   {
     "id": 7,
@@ -107,9 +120,11 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Mare nunca acende luzes e as desliga frequentemente.",
+    "abilities": [
+      "Pode caçar com sanidade de 60% em ambientes escuros ou 40% com luzes acesas.",
+      "Sua habilidade é desligar uma luz recém acesa pelo jogador, a cada 10s."
+    ]
   },
   {
     "id": 8,
@@ -123,9 +138,10 @@
       "normal": 1.0,
       "others": [3.0]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Revenant é um fantasma que fica muito rápido quando persegue um jogador.",
+    "abilities": [
+      "Quando perseguindo um jogador, sua velocidade é de 3.0m/s; caso contrário, vaga a 1.0m/s durante a caçada."
+    ]
   },
   {
     "id": 9,
@@ -139,9 +155,11 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Shade é um fantasma tímido, não interagindo com objetos se houver jogadores no mesmo cômodo (exceto escrita fantasma e apagar chamas).",
+    "abilities": [
+      "Realiza mais eventos quando a sanidade média está baixa.",
+      "Pode aparecer como uma sombra ao ser invocado pela caixa de música, pata de macaco, ou círculo de invocação."
+    ]
   },
   {
     "id": 10,
@@ -155,9 +173,13 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "O Demônio é um fantasma muito agressivo.",
+    "abilities": [
+      "Incenso em um Demônio previne caçadas por 60s em vez de 90s.",
+      "Tem 20s de espera entre caçadas, em vez dos 25s normais.",
+      "O alcance dos crucifixos é aumentado em 50%.",
+      "Pode caçar em qualquer nível de sanidade."
+    ]
   },
   {
     "id": 11,
@@ -171,9 +193,12 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Yurei é um fantasma que mexe com a sanidade dos jogadores.",
+    "abilities": [
+      "Yurei pode fechar portas e diminuir a sanidade de jogadores próximos em 15%.",
+      "É o único fantasma que pode interagir com portas de entrada/saída fora de caçadas ou eventos.",
+      "Incensar um Yurei o prende em seu cômodo favorito por 60s."
+    ]
   },
   {
     "id": 12,
@@ -187,9 +212,14 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Oni é um fantasma muito ativo, especialmente quando há jogadores próximos.",
+    "abilities": [
+      "Oni nunca realiza o evento da Airball.",
+      "Pode drenar 20% de sanidade durante eventos, em vez dos 10% normais.",
+      "É mais visível durante caçadas.",
+      "Se torna mais ativo com mais pessoas próximas de seu cômodo.",
+      "Tem maior chance de aparecer com seu modelo completo durante eventos e caçadas."
+    ]
   },
   {
     "id": 13,
@@ -203,9 +233,12 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Yokai é um fantasma que reage ao som dos jogadores.",
+    "abilities": [
+      "Yokai tem baixa audição e só detecta som e eletrônicos a menos de 2.5m durante caçadas.",
+      "Torna-se mais ativo quando jogadores falam próximos a ele.",
+      "Pode iniciar caçadas com sanidade de 80% se jogadores falarem perto (50% normalmente)."
+    ]
   },
   {
     "id": 14,
@@ -219,9 +252,13 @@
       "normal": 1.4,
       "others": [2.7]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Hantu é o fantasma congelante, mais rápido em ambientes frios.",
+    "abilities": [
+      "Hantu nunca liga o disjuntor.",
+      "Durante uma caçada, exibe \"bafo congelante\" em cômodos frios com o disjuntor desligado/quebrado.",
+      "É mais rápido em ambientes frios e nunca acelera com linha de visão de um jogador.",
+      "Apresenta \"Temperatura Baixa\" em modos Pesadelo/Insanidade."
+    ]
   },
   {
     "id": 15,
@@ -235,9 +272,11 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Goryo só é visto no D.O.T.S pela câmera, sem jogadores no cômodo.",
+    "abilities": [
+      "Goryo nunca muda de cômodo favorito e raramente sai dele.",
+      "Sempre apresenta \"D.O.T.S\" em modos Pesadelo/Insanidade."
+    ]
   },
   {
     "id": 16,
@@ -251,9 +290,11 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Myling é um fantasma silencioso durante a caçada.",
+    "abilities": [
+      "Durante a caçada, os passos e grunhidos de Myling não são ouvidos a mais de 12m.",
+      "Emite sons através do microfone parabólico com maior frequência."
+    ]
   },
   {
     "id": 17,
@@ -267,9 +308,11 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Onryo reage a chamas como crucifixos.",
+    "abilities": [
+      "Chamas atuam como crucifixos; se tentar caçar, Onryo apaga a chama acesa primeiro (alcance de 4m).",
+      "Pode iniciar caçadas em qualquer sanidade se apagar a terceira chama e não houver outra chama ou crucifixo para impedi-lo."
+    ]
   },
   {
     "id": 18,
@@ -283,9 +326,10 @@
       "normal": 1.53,
       "others": [1.87]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "The Twins fazem interações simultâneas em locais distintos.",
+    "abilities": [
+      "Caçam a 1.53m/s na localização física e 1.87m/s de outra localização."
+    ]
   },
   {
     "id": 19,
@@ -299,9 +343,11 @@
       "normal": 1.7,
       "others": [2.5]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Raiju interfere em equipamentos eletrônicos a 15m durante caçadas.",
+    "abilities": [
+      "Pode caçar com sanidade de 65% se houver equipamentos ligados próximos.",
+      "Se locomove a 2.5m/s perto de equipamentos ligados; caso contrário, 1.7m/s."
+    ]
   },
   {
     "id": 20,
@@ -315,9 +361,13 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Obake é um fantasma mutante com habilidades raras.",
+    "abilities": [
+      "Obake tem 6.66% de chance de alternar entre modelos de fantasmas durante caçadas.",
+      "Tem 25% de chance de não deixar evidência ultravioleta.",
+      "Pode reduzir o tempo das digitais em 50%.",
+      "Sempre apresenta \"Ultravioleta\" em modo Pesadelo/Insanidade."
+    ]
   },
   {
     "id": 21,
@@ -331,9 +381,10 @@
       "normal": 1.7,
       "others": []
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "O Mímico sempre apresenta orbes como evidência falsa adicional e copia comportamentos de outros fantasmas.",
+    "abilities": [
+      "Muda de comportamento entre 30s a 2 minutos."
+    ]
   },
   {
     "id": 22,
@@ -347,9 +398,14 @@
       "normal": 1.5,
       "others": [2.25, 3.71]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Moroi amaldiçoa jogadores que o ouvem, drenando sua sanidade mais rápido.",
+    "abilities": [
+      "Jogadores que ouvem Moroi pela Spirit Box ou microfone parabólico são amaldiçoados e perdem sanidade 2x mais rápido.",
+      "Incenso aumenta o tempo de cegueira em 50% (7.5s em vez de 5s).",
+      "Quanto menor a sanidade, mais rápido é o Moroi, podendo atingir até 3.71m/s em linha de visão.",
+      "Sua velocidade diminui se sanidade for restaurada com pílulas.",
+      "Sempre apresenta \"Spirit Box\" em modo Pesadelo/Insanidade."
+    ]
   },
   {
     "id": 23,
@@ -363,9 +419,13 @@
       "normal": 3.0,
       "others": [0.4]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Deogen tem uma variação única de velocidade durante as caçadas.",
+    "abilities": [
+      "Há 33% de chance de Deogen responder com uma respiração ofegante na Spirit Box a 1m de distância.",
+      "Não é possível se esconder de Deogen.",
+      "Sua velocidade varia entre 3.0m/s (longe de jogadores) e 0.4m/s (próximo de jogadores).",
+      "Sempre apresenta \"Spirit Box\" em modo Pesadelo/Insanidade."
+    ]
   },
   {
     "id": 24,
@@ -379,8 +439,12 @@
       "normal": 2.75,
       "others": [1.0]
     },
-    "tips": [],
-    "behaviors": [],
-    "skill": ""
+    "description": "Thaye envelhece ao longo do tempo, ficando menos ativo.",
+    "abilities": [
+      "É mais ativo enquanto jovem.",
+      "A resposta \"Quantos anos você tem?\" no Tabuleiro Ouija muda conforme envelhece.",
+      "Caça a 75% de sanidade média quando jovem e a 15% quando mais velho.",
+      "Sua velocidade é de 2.75m/s quando jovem e 1.0m/s quando mais velho."
+    ]
   }
 ]
