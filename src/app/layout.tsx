@@ -40,7 +40,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="bg-surface font-shadow">
+      <body className="bg-surface font-shadow scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white">
         <main className="h-full w-full">
           <Header isOpen={isOpen} toggleSidebar={toggleSidebar} />
           <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />

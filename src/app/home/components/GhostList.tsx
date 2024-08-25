@@ -2,7 +2,6 @@ import { EvidenceKey, Ghost, GhostListProps } from '../types'
 import GhostCard from './GhostCard'
 import { useState } from 'react'
 import GhostModal from './GhostModal'
-import { AudioProvider } from '@/contexts/audio'
 
 const evidenceMap: Record<EvidenceKey, string> = {
   emf: 'EMF Level 5',
@@ -51,16 +50,14 @@ const GhostList: React.FC<GhostListProps> = ({ ghosts, selectedEvidences }) => {
 
   return (
     <div className="flow-row grid w-full grid-cols-[repeat(auto-fit,minmax(330px,1fr))] gap-4">
-      <AudioProvider>
-        {sortedGhosts.map((ghost) => (
-          <GhostCard
-            onClick={() => openModal(ghost)}
-            key={ghost.id}
-            ghost={ghost}
-            disabled={!ghost.matches}
-          />
-        ))}
-      </AudioProvider>
+      {sortedGhosts.map((ghost) => (
+        <GhostCard
+          onClick={() => openModal(ghost)}
+          key={ghost.id}
+          ghost={ghost}
+          disabled={!ghost.matches}
+        />
+      ))}
       <GhostModal
         closeModal={closeModal}
         isModalOpen={isModalOpen}
