@@ -34,9 +34,9 @@ const GhostCard: React.FC<GhostCardProps> = ({ ghost, disabled, onClick }) => {
             </div>
           </div>
           <div className="flex h-32 flex-1 select-none flex-col gap-2 overflow-y-auto rounded-lg bg-current-dark p-2 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white">
-            <h2 className="text-sm font-bold text-accent">Descrição:</h2>
+            <h2 className="text-sm font-bold text-accent">Descrição</h2>
             <p className="text-sm">{ghost.description}</p>
-            <h2 className="text-sm font-bold text-accent">Evidências:</h2>
+            <h2 className="text-sm font-bold text-accent">Comportamentos</h2>
             <ul className="list-inside list-disc space-y-2">
               {ghost.abilities.map((abilitie, index) => (
                 <li key={abilitie} className="text-sm">
