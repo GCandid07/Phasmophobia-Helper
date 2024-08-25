@@ -1,4 +1,5 @@
 'use client'
+import { AudioProvider } from '@/contexts/audio'
 import Card from '@/components/Card'
 import WelcomeMessage from '@/components/WelcomeMessage'
 import EvidenceSelector from './components/EvidenceSelector'
@@ -19,22 +20,24 @@ const HomePage = () => {
   })
 
   return (
-    <div className="flex h-full flex-col justify-between gap-4 text-white">
-      <div className="flex items-center justify-center text-center">
-        <WelcomeMessage />
+    <AudioProvider>
+      <div className="flex h-full flex-col justify-between gap-4 text-white">
+        <div className="flex items-center justify-center text-center">
+          <WelcomeMessage />
+        </div>
+
+        <Card className="w-full sm:w-max">
+          <EvidenceSelector
+            ghosts={ghosts}
+            values={values}
+            setValue={setValue}
+            reset={reset}
+          />
+        </Card>
+
+        <GhostList ghosts={ghosts} selectedEvidences={values} />
       </div>
-
-      <Card className="w-full sm:w-max">
-        <EvidenceSelector
-          ghosts={ghosts}
-          values={values}
-          setValue={setValue}
-          reset={reset}
-        />
-      </Card>
-
-      <GhostList ghosts={ghosts} selectedEvidences={values} />
-    </div>
+    </AudioProvider>
   )
 }
 
