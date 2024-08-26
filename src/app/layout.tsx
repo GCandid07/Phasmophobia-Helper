@@ -2,6 +2,7 @@
 import './globals.css'
 import Header from '@/components/Header'
 import Sidebar from '@/components/Sidebar'
+import { AudioProvider } from '@/contexts/audio'
 import { useEffect, useState } from 'react'
 
 export default function RootLayout({
@@ -40,18 +41,20 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="bg-surface font-shadow scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white">
+      <body className="bg-surface font-shadow">
         <main className="h-full w-full">
-          <Header isOpen={isOpen} toggleSidebar={toggleSidebar} />
-          <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-          <section
-            id="bg"
-            className={`min-h-screen flex-1 bg-surface p-4 text-white transition-all duration-200 ease-in-out ${
-              isOpen ? 'md:ml-64' : 'ml-0'
-            }`}
-          >
-            {children}
-          </section>
+          <AudioProvider>
+            <Header isOpen={isOpen} toggleSidebar={toggleSidebar} />
+            <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+            <section
+              id="bg"
+              className={`min-h-screen flex-1 bg-surface p-4 text-white transition-all duration-200 ease-in-out ${
+                isOpen ? 'md:ml-64' : 'ml-0'
+              }`}
+            >
+              {children}
+            </section>
+          </AudioProvider>
         </main>
       </body>
     </html>
