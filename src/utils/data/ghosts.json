@@ -257,7 +257,7 @@
       "Hantu nunca liga o disjuntor.",
       "Durante uma caçada, exibe \"bafo congelante\" em cômodos frios com o disjuntor desligado/quebrado.",
       "É mais rápido em ambientes frios e nunca acelera com linha de visão de um jogador.",
-      "Apresenta \"Temperatura Baixa\" em modos Pesadelo/Insanidade."
+      "Apresenta \"Temperatura Baixa\" obrigatória em modos Pesadelo/Insanidade."
     ]
   },
   {
@@ -275,7 +275,7 @@
     "description": "Goryo só é visto no D.O.T.S pela câmera, sem jogadores no cômodo.",
     "abilities": [
       "Goryo nunca muda de cômodo favorito e raramente sai dele.",
-      "Sempre apresenta \"D.O.T.S\" em modos Pesadelo/Insanidade."
+      "Sempre apresenta \"D.O.T.S\" obrigatória em modos Pesadelo/Insanidade."
     ]
   },
   {
@@ -366,7 +366,7 @@
       "Obake tem 6.66% de chance de alternar entre modelos de fantasmas durante caçadas.",
       "Tem 25% de chance de não deixar evidência ultravioleta.",
       "Pode reduzir o tempo das digitais em 50%.",
-      "Sempre apresenta \"Ultravioleta\" em modo Pesadelo/Insanidade."
+      "Sempre apresenta \"Ultravioleta\" obrigatória em modo Pesadelo/Insanidade."
     ]
   },
   {
@@ -404,7 +404,7 @@
       "Incenso aumenta o tempo de cegueira em 50% (7.5s em vez de 5s).",
       "Quanto menor a sanidade, mais rápido é o Moroi, podendo atingir até 3.71m/s em linha de visão.",
       "Sua velocidade diminui se sanidade for restaurada com pílulas.",
-      "Sempre apresenta \"Spirit Box\" em modo Pesadelo/Insanidade."
+      "Sempre apresenta \"Spirit Box\" obrigatória em modo Pesadelo/Insanidade."
     ]
   },
   {
@@ -424,7 +424,7 @@
       "Há 33% de chance de Deogen responder com uma respiração ofegante na Spirit Box a 1m de distância.",
       "Não é possível se esconder de Deogen.",
       "Sua velocidade varia entre 3.0m/s (longe de jogadores) e 0.4m/s (próximo de jogadores).",
-      "Sempre apresenta \"Spirit Box\" em modo Pesadelo/Insanidade."
+      "Sempre apresenta \"Spirit Box\" obrigatória em modo Pesadelo/Insanidade."
     ]
   },
   {
